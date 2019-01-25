@@ -136,7 +136,7 @@
   "Internal table of programming language definitions.")
 
 (defun language-id-mode-match-p (mode)
-  "Interal helper function to check whether current buffer matches MODE."
+  "Interal helper function to match current buffer against MODE."
   (let ((mode (if (listp mode) mode (list mode))))
     (cl-destructuring-bind (majmode . variables) mode
       (and (equal major-mode majmode)
@@ -152,14 +152,14 @@
   "Get GitHub Linguist language name for current buffer.
 
 Return the name of the programming language or markup language
-used in the current buffer. The name is a string from the GitHub
-Linguist language list. The language is determined by looking at
-the active `major-mode'. Some major modes support more than one
-language. In that case minor modes and possibly other variables
+used in the current buffer.  The name is a string from the GitHub
+Linguist language list.  The language is determined by looking at
+the active `major-mode'.  Some major modes support more than one
+language.  In that case minor modes and possibly other variables
 are consulted to disambiguate the language.
 
 In addition to the modes bundled with GNU Emacs, many third-party
-modes are recognized. No statistical text matching or other
+modes are recognized.  No statistical text matching or other
 heuristics are used in detecting the language.
 
 The language definitions live inside the language-id library and

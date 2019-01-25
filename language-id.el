@@ -136,7 +136,7 @@
   "Internal table of programming language definitions.")
 
 (defun language-id-mode-match-p (mode)
-  "Interal helper function to match current buffer against MODE."
+  "Interal helper to match current buffer against MODE."
   (let ((mode (if (listp mode) mode (list mode))))
     (cl-destructuring-bind (majmode . variables) mode
       (and (equal major-mode majmode)

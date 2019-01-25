@@ -27,6 +27,9 @@
 ;;
 ;;; Code:
 
+(defvar language-id-file-name-extension nil
+  "Internal variable for file name extension during lookup.")
+
 (defconst language-id-definitions
   '(
     ("Assembly"
@@ -168,10 +171,12 @@ are updated in new releases of the library.
 
 If the language is not unambiguously recognized, the function
 returns nil."
-  (cl-dolist (definition language-id-definitions)
-    (cl-destructuring-bind (language-id . modes) definition
-      (when (cl-some #'language-id-mode-match-p modes)
-        (cl-return language-id)))))
+  (let ((language-id-file-name-extension
+         (downcase (file-name-extension (or (buffer-file-name) "") t))))
+    (cl-dolist (definition language-id-definitions)
+      (cl-destructuring-bind (language-id . modes) definition
+        (when (cl-some #'language-id-mode-match-p modes)
+          (cl-return language-id))))))
 
 (provide 'language-id)
 

@@ -28,19 +28,39 @@
 
 (defconst language-id-definitions
   '(
+    ("Assembly"
+     asm-mode
+     nasm-mode)
     ("C"
      c-mode)
     ("C++"
      c++-mode)
+    ("Clojure"
+     clojure-mode
+     clojurec-mode
+     clojurescript-mode)
+    ("Crystal"
+     crystal-mode)
     ("CSS"
      css-mode
      (web-mode (web-mode-engine "none") (web-mode-content-type "css")))
+    ("D"
+     d-mode)
+    ("Dart"
+     dart-mode)
+    ("Elixir"
+     elixir-mode)
     ("Elm"
      elm-mode)
+    ("Emacs Lisp"
+     emacs-lisp-mode
+     lisp-interaction-mode)
     ("Go"
      go-mode)
     ("GraphQL"
      graphql-mode)
+    ("Haskell"
+     haskell-mode)
     ("HTML"
      html-helper-mode
      html-mode
@@ -62,13 +82,24 @@
      jsx-mode
      rjsx-mode
      (web-mode (web-mode-engine "none") (web-mode-content-type "jsx")))
+    ("Kotlin"
+     kotlin-mode)
     ("Less"
      less-css-mode)
+    ("Literate Haskell"
+     literate-haskell-mode)
+    ("Lua"
+     lua-mode)
     ("Markdown"
      gfm-mode
      markdown-mode)
     ("Objective-C"
      objc-mode)
+    ("OCaml"
+     caml-mode
+     tuareg-mode)
+    ("Perl"
+     perl-mode)
     ("PHP"
      php-mode)
     ("Protocol Buffer"
@@ -78,10 +109,17 @@
     ("Ruby"
      enh-ruby-mode
      ruby-mode)
+    ("Rust"
+     rust-mode)
     ("SCSS"
      scss-mode)
+    ("Shell"
+     sh-mode)
     ("SQL"
      sql-mode)
+    ("Swift"
+     swift-mode
+     swift3-mode)
     ("TypeScript"
      typescript-mode
      typescript-tsx-mode)
@@ -91,6 +129,8 @@
      nxml-mode
      xml-mode
      (web-mode (web-mode-engine "none") (web-mode-content-type "xml")))
+    ("YAML"
+     yaml-mode)
     )
   "Internal table of programming language definitions.")
 

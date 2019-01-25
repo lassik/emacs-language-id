@@ -70,9 +70,9 @@
     ("Java"
      java-mode)
     ("JavaScript"
-     js-mode
-     js2-mode
-     js3-mode
+     (js-mode (flow-minor-mode nil))
+     (js2-mode (flow-minor-mode nil))
+     (js3-mode (flow-minor-mode nil))
      (web-mode (web-mode-engine "none") (web-mode-content-type "javascript")))
     ("JSON"
      json-mode

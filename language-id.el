@@ -18,7 +18,7 @@
 ;; replicated in other packages.
 ;;
 ;; Currently the public API has just one function,
-;; `language-id-from-buffer'.  It looks at the major mode and other
+;; `language-id-buffer'.  It looks at the major mode and other
 ;; variables and returns the language's GitHub Linguist identifier.
 ;;
 ;; This library does not do any statistical text matching to guess the
@@ -147,7 +147,7 @@
                            (equal wanted-value value))))
                      variables)))))
 
-(defun language-id-from-buffer ()
+(defun language-id-buffer ()
   "Get GitHub Linguist language name for current buffer.
 
 Return the name of the programming language or markup language

@@ -140,9 +140,11 @@
     (cl-destructuring-bind (majmode . variables) mode
       (and (equal major-mode majmode)
            (cl-every (lambda (variable)
-                       (cl-destructuring-bind (symbol value) variable
-                         (and (boundp symbol)
-                              (equal value (symbol-value symbol)))))
+                       (cl-destructuring-bind (symbol wanted-value) variable
+                         (let ((value (if (boundp symbol)
+                                          (symbol-value symbol)
+                                        nil)))
+                           (equal wanted-value value))))
                      variables)))))
 
 (defun language-id-from-buffer ()

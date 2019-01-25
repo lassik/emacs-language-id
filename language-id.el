@@ -32,6 +32,21 @@
 
 (defconst language-id-definitions
   '(
+
+    ;; TypeScript/TSX need to come before JavaScript/JSX because they
+    ;; are differentiated only by file name extension. Also, GitHub
+    ;; Linguist currently files TSX under the TypeScript language ID,
+    ;; whereas JavaScript and JSX have separate language IDs.
+    ("TypeScript"
+     (web-mode
+      (web-mode-content-type "javascript")
+      (web-mode-engine "none")
+      (language-id-file-name-extension ".ts"))
+     (web-mode
+      (web-mode-content-type "jsx")
+      (web-mode-engine "none")
+      (language-id-file-name-extension ".tsx")))
+
     ("Assembly"
      asm-mode
      nasm-mode)

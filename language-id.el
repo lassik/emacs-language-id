@@ -125,7 +125,8 @@
      typescript-mode
      typescript-tsx-mode)
     ("Vue"
-     vue-mode)
+     vue-mode
+     (web-mode (web-mode-content-type "html") (web-mode-engine "vue")))
     ("XML"
      nxml-mode
      xml-mode

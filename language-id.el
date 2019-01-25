@@ -44,7 +44,7 @@
      crystal-mode)
     ("CSS"
      css-mode
-     (web-mode (web-mode-engine "none") (web-mode-content-type "css")))
+     (web-mode (web-mode-content-type "css") (web-mode-engine "none")))
     ("D"
      d-mode)
     ("Dart"
@@ -67,22 +67,22 @@
      html-mode
      mhtml-mode
      nxhtml-mode
-     (web-mode (web-mode-engine "none") (web-mode-content-type "html")))
+     (web-mode (web-mode-content-type "html") (web-mode-engine "none")))
     ("Java"
      java-mode)
     ("JavaScript"
      (js-mode (flow-minor-mode nil))
      (js2-mode (flow-minor-mode nil))
      (js3-mode (flow-minor-mode nil))
-     (web-mode (web-mode-engine "none") (web-mode-content-type "javascript")))
+     (web-mode (web-mode-content-type "javascript") (web-mode-engine "none")))
     ("JSON"
      json-mode
-     (web-mode (web-mode-engine "none") (web-mode-content-type "json")))
+     (web-mode (web-mode-content-type "json") (web-mode-engine "none")))
     ("JSX"
      js2-jsx-mode
      jsx-mode
      rjsx-mode
-     (web-mode (web-mode-engine "none") (web-mode-content-type "jsx")))
+     (web-mode (web-mode-content-type "jsx") (web-mode-engine "none")))
     ("Kotlin"
      kotlin-mode)
     ("Less"
@@ -129,7 +129,7 @@
     ("XML"
      nxml-mode
      xml-mode
-     (web-mode (web-mode-engine "none") (web-mode-content-type "xml")))
+     (web-mode (web-mode-content-type "xml") (web-mode-engine "none")))
     ("YAML"
      yaml-mode)
     )

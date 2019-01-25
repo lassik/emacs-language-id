@@ -90,7 +90,8 @@
     ("XML"
      nxml-mode
      xml-mode
-     (web-mode (web-mode-engine "none") (web-mode-content-type "xml"))))
+     (web-mode (web-mode-engine "none") (web-mode-content-type "xml")))
+    )
   "Internal table of programming language definitions.")
 
 (defun language-id-mode-match-p (mode)

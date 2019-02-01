@@ -160,8 +160,8 @@
 (defun language-id-mode-match-p (mode)
   "Interal helper to match current buffer against MODE."
   (let ((mode (if (listp mode) mode (list mode))))
-    (cl-destructuring-bind (majmode . variables) mode
-      (and (equal major-mode majmode)
+    (cl-destructuring-bind (wanted-major-mode . variables) mode
+      (and (derived-mode-p wanted-major-mode)
            (cl-every (lambda (variable)
                        (cl-destructuring-bind (symbol wanted-value) variable
                          (let ((value (if (boundp symbol)

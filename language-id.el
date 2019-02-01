@@ -191,10 +191,11 @@ If the language is not unambiguously recognized, the function
 returns nil."
   (let ((language-id-file-name-extension
          (downcase (file-name-extension (or (buffer-file-name) "") t))))
-    (cl-dolist (definition language-id-definitions)
-      (cl-destructuring-bind (language-id . modes) definition
-        (when (cl-some #'language-id-mode-match-p modes)
-          (cl-return language-id))))))
+    (cl-some (lambda (definition)
+               (cl-destructuring-bind (language-id . modes) definition
+                 (when (cl-some #'language-id-mode-match-p modes)
+                   language-id)))
+             language-id-definitions)))
 
 (provide 'language-id)
 

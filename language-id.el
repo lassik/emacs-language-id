@@ -164,10 +164,8 @@
       (and (derived-mode-p wanted-major-mode)
            (cl-every (lambda (variable)
                        (cl-destructuring-bind (symbol wanted-value) variable
-                         (let ((value (if (boundp symbol)
-                                          (symbol-value symbol)
-                                        nil)))
-                           (equal wanted-value value))))
+                         (equal wanted-value
+                                (when (boundp symbol) (symbol-value symbol)))))
                      variables)))))
 
 (defun language-id-buffer ()

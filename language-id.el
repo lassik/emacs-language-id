@@ -27,10 +27,10 @@
 ;;
 ;;; Code:
 
-(defvar language-id-file-name-extension nil
+(defvar language-id--file-name-extension nil
   "Internal variable for file name extension during lookup.")
 
-(defconst language-id-definitions
+(defconst language-id--definitions
   '(
 
     ;; TypeScript/TSX need to come before JavaScript/JSX because in
@@ -47,11 +47,11 @@
      (web-mode
       (web-mode-content-type "javascript")
       (web-mode-engine "none")
-      (language-id-file-name-extension ".ts"))
+      (language-id--file-name-extension ".ts"))
      (web-mode
       (web-mode-content-type "jsx")
       (web-mode-engine "none")
-      (language-id-file-name-extension ".tsx")))
+      (language-id--file-name-extension ".tsx")))
 
     ("Assembly"
      asm-mode
@@ -156,7 +156,7 @@
      yaml-mode))
   "Internal table of programming language definitions.")
 
-(defun language-id-mode-match-p (mode)
+(defun language-id--mode-match-p (mode)
   "Interal helper to match current buffer against MODE."
   (let ((mode (if (listp mode) mode (list mode))))
     (cl-destructuring-bind (wanted-major-mode . variables) mode
@@ -186,13 +186,13 @@ are updated in new releases of the library.
 
 If the language is not unambiguously recognized, the function
 returns nil."
-  (let ((language-id-file-name-extension
+  (let ((language-id--file-name-extension
          (downcase (file-name-extension (or (buffer-file-name) "") t))))
     (cl-some (lambda (definition)
                (cl-destructuring-bind (language-id . modes) definition
-                 (when (cl-some #'language-id-mode-match-p modes)
+                 (when (cl-some #'language-id--mode-match-p modes)
                    language-id)))
-             language-id-definitions)))
+             language-id--definitions)))
 
 (provide 'language-id)
 

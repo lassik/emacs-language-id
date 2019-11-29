@@ -87,6 +87,7 @@
      graphql-mode)
     ("Haskell"
      haskell-mode)
+    ("HCL" hcl-mode terraform-mode)
     ("HTML"
      html-helper-mode
      html-mode

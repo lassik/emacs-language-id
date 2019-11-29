@@ -73,6 +73,7 @@
      d-mode)
     ("Dart"
      dart-mode)
+    ("Dhall" dhall-mode)
     ("Elixir"
      elixir-mode)
     ("Elm"

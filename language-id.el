@@ -153,8 +153,7 @@
      xml-mode
      (web-mode (web-mode-content-type "xml") (web-mode-engine "none")))
     ("YAML"
-     yaml-mode)
-    )
+     yaml-mode))
   "Internal table of programming language definitions.")
 
 (defun language-id-mode-match-p (mode)

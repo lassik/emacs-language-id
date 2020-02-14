@@ -131,8 +131,7 @@
     ("Ruby"
      enh-ruby-mode
      ruby-mode)
-    ("Rust"
-     rust-mode)
+    ("Rust" rust-mode rustic-mode)
     ("SCSS"
      scss-mode)
     ("Shell"

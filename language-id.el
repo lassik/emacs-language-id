@@ -53,6 +53,8 @@
     ("Assembly"
      asm-mode
      nasm-mode)
+    ("Bazel" bazel-mode)
+    ("BibTeX" bibtex-mode)
     ("C"
      c-mode)
     ("C++"
@@ -61,6 +63,7 @@
      clojure-mode
      clojurec-mode
      clojurescript-mode)
+    ("CMake" cmake-mode)
     ("Crystal"
      crystal-mode)
     ("CSS"
@@ -71,6 +74,7 @@
     ("Dart"
      dart-mode)
     ("Dhall" dhall-mode)
+    ("Dockerfile" dockerfile-mode)
     ("Elixir"
      elixir-mode)
     ("Elm"
@@ -78,12 +82,14 @@
     ("Emacs Lisp"
      emacs-lisp-mode
      lisp-interaction-mode)
+    ("Fish" fish-mode)
     ("Go"
      go-mode)
     ("GraphQL"
      graphql-mode)
     ("Haskell" haskell-mode literate-haskell-mode)
     ("HCL" hcl-mode terraform-mode)
+    ("Terraform" terraform-mode)
     ("HTML"
      html-helper-mode
      html-mode
@@ -108,6 +114,7 @@
      (web-mode (web-mode-content-type "jsx") (web-mode-engine "none")))
     ("Kotlin"
      kotlin-mode)
+    ("LaTeX" latex-mode)
     ("Less"
      less-css-mode)
     ("Literate Haskell"
@@ -117,6 +124,7 @@
     ("Markdown"
      gfm-mode
      markdown-mode)
+    ("Nix" nix-mode)
     ("Objective-C"
      objc-mode)
     ("OCaml"
@@ -127,21 +135,26 @@
      php-mode)
     ("Protocol Buffer"
      protobuf-mode)
+    ("PureScript" purescript-mode)
     ("Python"
      python-mode)
+    ("R" ess-r-mode (ess-mode (ess-dialect "R")))
     ("Ruby"
      enh-ruby-mode
      ruby-mode)
     ("Rust" rust-mode rustic-mode)
+    ("Scala" scala-mode)
     ("SCSS"
      scss-mode)
     ("Shell"
      sh-mode)
+    ("Solidity" solidity-mode)
     ("SQL"
      sql-mode)
     ("Swift"
      swift-mode
      swift3-mode)
+    ("Verilog" verilog-mode)
     ("Vue"
      vue-mode
      (web-mode (web-mode-content-type "html") (web-mode-engine "vue")))

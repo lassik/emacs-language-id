@@ -37,17 +37,14 @@
     ;; web-mode we can tell them apart by file name extension only.
     ;; This implies that unsaved temp buffers using TypeScript/TSX in
     ;; web-mode are classified as JavaScript/JSX.
-    ;;
-    ;; Also, GitHub Linguist currently conflates both TypeScript and
-    ;; TSX under the TypeScript language ID, whereas JavaScript and
-    ;; JSX have separate language IDs.
     ("TypeScript"
      typescript-mode
-     typescript-tsx-mode
      (web-mode
       (web-mode-content-type "javascript")
       (web-mode-engine "none")
-      (language-id--file-name-extension ".ts"))
+      (language-id--file-name-extension ".ts")))
+    ("TSX"
+     typescript-tsx-mode
      (web-mode
       (web-mode-content-type "jsx")
       (web-mode-engine "none")

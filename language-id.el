@@ -82,8 +82,7 @@
      go-mode)
     ("GraphQL"
      graphql-mode)
-    ("Haskell"
-     haskell-mode)
+    ("Haskell" haskell-mode literate-haskell-mode)
     ("HCL" hcl-mode terraform-mode)
     ("HTML"
      html-helper-mode

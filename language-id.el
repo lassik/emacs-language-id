@@ -51,54 +51,34 @@
       (web-mode-engine "none")
       (language-id--file-name-extension ".tsx")))
 
-    ("Assembly"
-     asm-mode
-     nasm-mode)
+    ("Assembly" asm-mode nasm-mode)
     ("Bazel" bazel-mode)
     ("BibTeX" bibtex-mode)
-    ("C"
-     c-mode)
-    ("C++"
-     c++-mode)
-    ("Clojure"
-     clojure-mode
-     clojurec-mode
-     clojurescript-mode)
+    ("C" c-mode)
+    ("C++" c++-mode)
+    ("Clojure" clojure-mode clojurec-mode clojurescript-mode)
     ("CMake" cmake-mode)
-    ("Crystal"
-     crystal-mode)
+    ("Crystal" crystal-mode)
     ("CSS"
      css-mode
      (web-mode (web-mode-content-type "css") (web-mode-engine "none")))
-    ("D"
-     d-mode)
-    ("Dart"
-     dart-mode)
+    ("D" d-mode)
+    ("Dart" dart-mode)
     ("Dhall" dhall-mode)
     ("Dockerfile" dockerfile-mode)
-    ("Elixir"
-     elixir-mode)
-    ("Elm"
-     elm-mode)
-    ("Emacs Lisp"
-     emacs-lisp-mode
-     lisp-interaction-mode)
+    ("Elixir" elixir-mode)
+    ("Elm" elm-mode)
+    ("Emacs Lisp" emacs-lisp-mode lisp-interaction-mode)
     ("Fish" fish-mode)
-    ("Go"
-     go-mode)
-    ("GraphQL"
-     graphql-mode)
+    ("Go" go-mode)
+    ("GraphQL" graphql-mode)
     ("Haskell" haskell-mode)
     ("HCL" hcl-mode terraform-mode)
     ("Terraform" terraform-mode)
     ("HTML"
-     html-helper-mode
-     html-mode
-     mhtml-mode
-     nxhtml-mode
+     html-helper-mode html-mode mhtml-mode nxhtml-mode
      (web-mode (web-mode-content-type "html") (web-mode-engine "none")))
-    ("Java"
-     java-mode)
+    ("Java" java-mode)
     ("JavaScript"
      (js-mode (flow-minor-mode nil))
      (js2-mode (flow-minor-mode nil))
@@ -108,63 +88,39 @@
      json-mode
      (web-mode (web-mode-content-type "json") (web-mode-engine "none")))
     ("JSX"
-     js2-jsx-mode
-     jsx-mode
-     rjsx-mode
-     react-mode
+     js2-jsx-mode jsx-mode rjsx-mode react-mode
      (web-mode (web-mode-content-type "jsx") (web-mode-engine "none")))
-    ("Kotlin"
-     kotlin-mode)
+    ("Kotlin" kotlin-mode)
     ("LaTeX" latex-mode)
-    ("Less"
-     less-css-mode)
-    ("Literate Haskell"
-     literate-haskell-mode)
-    ("Lua"
-     lua-mode)
-    ("Markdown"
-     gfm-mode
-     markdown-mode)
+    ("Less" less-css-mode)
+    ("Literate Haskell" literate-haskell-mode)
+    ("Lua" lua-mode)
+    ("Markdown" gfm-mode markdown-mode)
     ("Nix" nix-mode)
-    ("Objective-C"
-     objc-mode)
-    ("OCaml"
-     caml-mode
-     tuareg-mode)
+    ("Objective-C" objc-mode)
+    ("OCaml" caml-mode tuareg-mode)
     ("Perl" cperl-mode perl-mode)
-    ("PHP"
-     php-mode)
-    ("Protocol Buffer"
-     protobuf-mode)
+    ("PHP" php-mode)
+    ("Protocol Buffer" protobuf-mode)
     ("PureScript" purescript-mode)
-    ("Python"
-     python-mode)
+    ("Python" python-mode)
     ("R" ess-r-mode (ess-mode (ess-dialect "R")))
-    ("Ruby"
-     enh-ruby-mode
-     ruby-mode)
+    ("Ruby" enh-ruby-mode ruby-mode)
     ("Rust" rust-mode rustic-mode)
     ("Scala" scala-mode)
-    ("SCSS"
-     scss-mode)
-    ("Shell"
-     sh-mode)
+    ("SCSS" scss-mode)
+    ("Shell" sh-mode)
     ("Solidity" solidity-mode)
-    ("SQL"
-     sql-mode)
-    ("Swift"
-     swift-mode
-     swift3-mode)
+    ("SQL" sql-mode)
+    ("Swift" swift-mode swift3-mode)
     ("Verilog" verilog-mode)
     ("Vue"
      vue-mode
      (web-mode (web-mode-content-type "html") (web-mode-engine "vue")))
     ("XML"
-     nxml-mode
-     xml-mode
+     nxml-mode xml-mode
      (web-mode (web-mode-content-type "xml") (web-mode-engine "none")))
-    ("YAML"
-     yaml-mode))
+    ("YAML" yaml-mode))
   "Internal table of programming language definitions.")
 
 (defun language-id--mode-match-p (mode)

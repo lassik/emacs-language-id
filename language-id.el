@@ -104,6 +104,7 @@
      js2-jsx-mode
      jsx-mode
      rjsx-mode
+     react-mode
      (web-mode (web-mode-content-type "jsx") (web-mode-engine "none")))
     ("Kotlin"
      kotlin-mode)

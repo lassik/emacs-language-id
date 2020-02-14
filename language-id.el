@@ -30,6 +30,7 @@
 (defvar language-id--file-name-extension nil
   "Internal variable for file name extension during lookup.")
 
+;; <https://raw.githubusercontent.com/github/linguist/master/lib/linguist/languages.yml>
 (defconst language-id--definitions
   '(
 

@@ -122,8 +122,7 @@
     ("OCaml"
      caml-mode
      tuareg-mode)
-    ("Perl"
-     perl-mode)
+    ("Perl" cperl-mode perl-mode)
     ("PHP"
      php-mode)
     ("Protocol Buffer"

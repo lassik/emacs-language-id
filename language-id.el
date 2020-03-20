@@ -34,6 +34,13 @@
 (defconst language-id--definitions
   '(
 
+    ;; JSON needs to come before JavaScript. Since json-mode is
+    ;; derived from javascript-mode, having JavaScript before JSON
+    ;; would cause JSON to be detected as JavaScript.
+    ("JSON"
+     json-mode
+     (web-mode (web-mode-content-type "json") (web-mode-engine "none")))
+
     ;; TypeScript/TSX need to come before JavaScript/JSX because in
     ;; web-mode we can tell them apart by file name extension only.
     ;; This implies that unsaved temp buffers using TypeScript/TSX in
@@ -50,6 +57,8 @@
       (web-mode-content-type "jsx")
       (web-mode-engine "none")
       (language-id--file-name-extension ".tsx")))
+
+    ;; The rest of the definitions are in alphabetical order.
 
     ("Assembly" asm-mode nasm-mode)
     ("Bazel" bazel-mode)

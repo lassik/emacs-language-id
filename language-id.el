@@ -79,14 +79,14 @@
      html-helper-mode html-mode mhtml-mode nxhtml-mode
      (web-mode (web-mode-content-type "html") (web-mode-engine "none")))
     ("Java" java-mode)
+    ("JSON"
+     json-mode
+     (web-mode (web-mode-content-type "json") (web-mode-engine "none")))
     ("JavaScript"
      (js-mode (flow-minor-mode nil))
      (js2-mode (flow-minor-mode nil))
      (js3-mode (flow-minor-mode nil))
      (web-mode (web-mode-content-type "javascript") (web-mode-engine "none")))
-    ("JSON"
-     json-mode
-     (web-mode (web-mode-content-type "json") (web-mode-engine "none")))
     ("JSX"
      js2-jsx-mode jsx-mode rjsx-mode react-mode
      (web-mode (web-mode-content-type "jsx") (web-mode-engine "none")))

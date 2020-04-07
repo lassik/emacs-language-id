@@ -139,11 +139,12 @@
   (let ((mode (if (listp mode) mode (list mode))))
     (cl-destructuring-bind (wanted-major-mode . variables) mode
       (and (derived-mode-p wanted-major-mode)
-           (cl-every (lambda (variable)
-                       (cl-destructuring-bind (symbol wanted-value) variable
-                         (equal wanted-value
-                                (when (boundp symbol) (symbol-value symbol)))))
-                     variables)))))
+           (cl-every
+            (lambda (variable)
+              (cl-destructuring-bind (symbol wanted-value) variable
+                (equal wanted-value
+                       (if (boundp symbol) (symbol-value symbol) nil))))
+            variables)))))
 
 (defun language-id-buffer ()
   "Get GitHub Linguist language name for current buffer.

@@ -83,20 +83,19 @@
     ("GraphQL" graphql-mode)
     ("Haskell" haskell-mode)
     ("HCL" hcl-mode terraform-mode)
-    ("Terraform" terraform-mode)
     ("HTML"
      html-helper-mode html-mode mhtml-mode nxhtml-mode
      (web-mode (web-mode-content-type "html") (web-mode-engine "none")))
     ("Java" java-mode)
-    ("JSON"
-     json-mode
-     (web-mode (web-mode-content-type "json") (web-mode-engine "none")))
-    ("Jsonnet" jsonnet-mode)
     ("JavaScript"
      (js-mode (flow-minor-mode nil))
      (js2-mode (flow-minor-mode nil))
      (js3-mode (flow-minor-mode nil))
      (web-mode (web-mode-content-type "javascript") (web-mode-engine "none")))
+    ("JSON"
+     json-mode
+     (web-mode (web-mode-content-type "json") (web-mode-engine "none")))
+    ("Jsonnet" jsonnet-mode)
     ("JSX"
      js2-jsx-mode jsx-mode rjsx-mode react-mode
      (web-mode (web-mode-content-type "jsx") (web-mode-engine "none")))
@@ -123,6 +122,7 @@
     ("Solidity" solidity-mode)
     ("SQL" sql-mode)
     ("Swift" swift-mode swift3-mode)
+    ("Terraform" terraform-mode)
     ("TOML" toml-mode conf-toml-mode)
     ("Verilog" verilog-mode)
     ("Vue"

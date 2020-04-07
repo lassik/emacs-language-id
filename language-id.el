@@ -122,6 +122,7 @@
     ("Solidity" solidity-mode)
     ("SQL" sql-mode)
     ("Swift" swift-mode swift3-mode)
+    ("TOML" toml-mode conf-toml-mode)
     ("Verilog" verilog-mode)
     ("Vue"
      vue-mode

@@ -82,7 +82,7 @@
     ("Go" go-mode)
     ("GraphQL" graphql-mode)
     ("Haskell" haskell-mode)
-    ("HCL" hcl-mode terraform-mode)
+    ("HCL" hcl-mode)
     ("HTML"
      html-helper-mode html-mode mhtml-mode nxhtml-mode
      (web-mode (web-mode-content-type "html") (web-mode-engine "none")))

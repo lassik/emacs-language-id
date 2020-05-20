@@ -41,6 +41,10 @@
      json-mode
      (web-mode (web-mode-content-type "json") (web-mode-engine "none")))
 
+    ;; PHP needs to come before C because php-mode is derived from
+    ;; c-mode.
+    ("PHP" php-mode)
+
     ;; TypeScript/TSX need to come before JavaScript/JSX because in
     ;; web-mode we can tell them apart by file name extension only.
     ;; This implies that unsaved temp buffers using TypeScript/TSX in
@@ -109,7 +113,6 @@
     ("Objective-C" objc-mode)
     ("OCaml" caml-mode tuareg-mode)
     ("Perl" cperl-mode perl-mode)
-    ("PHP" php-mode)
     ("Protocol Buffer" protobuf-mode)
     ("PureScript" purescript-mode)
     ("Python" python-mode)

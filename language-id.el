@@ -83,6 +83,7 @@
     ("Elm" elm-mode)
     ("Emacs Lisp" emacs-lisp-mode lisp-interaction-mode)
     ("Fish" fish-mode)
+    ("GLSL" glsl-mode)
     ("Go" go-mode)
     ("GraphQL" graphql-mode)
     ("Haskell" haskell-mode)

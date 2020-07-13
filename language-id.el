@@ -69,6 +69,7 @@
     ("BibTeX" bibtex-mode)
     ("C" c-mode)
     ("C++" c++-mode)
+    ("Cabal Config" haskell-cabal-mode)
     ("Clojure" clojure-mode clojurec-mode clojurescript-mode)
     ("CMake" cmake-mode)
     ("Crystal" crystal-mode)

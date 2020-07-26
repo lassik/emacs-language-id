@@ -2,7 +2,7 @@
 ;;
 ;; Author: Lassi Kortela <lassi@lassi.io>
 ;; URL: https://github.com/lassik/emacs-language-id
-;; Version: 0.7
+;; Version: 0.7.1
 ;; Package-Requires: ((emacs "24") (cl-lib "0.5"))
 ;; Keywords: languages util
 ;; SPDX-License-Identifier: ISC
@@ -44,6 +44,10 @@
     ;; PHP needs to come before C because php-mode is derived from
     ;; c-mode.
     ("PHP" php-mode)
+
+    ;; Terraform needs to come before HCL because terraform-mode is
+    ;; derived from hcl-mode.
+    ("Terraform" terraform-mode)
 
     ;; TypeScript/TSX need to come before JavaScript/JSX because in
     ;; web-mode we can tell them apart by file name extension only.
@@ -127,7 +131,6 @@
     ("Solidity" solidity-mode)
     ("SQL" sql-mode)
     ("Swift" swift-mode swift3-mode)
-    ("Terraform" terraform-mode)
     ("TOML" toml-mode conf-toml-mode)
     ("Verilog" verilog-mode)
     ("Vue"

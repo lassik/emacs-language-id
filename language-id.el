@@ -86,7 +86,7 @@
     ("Dockerfile" dockerfile-mode)
     ("Elixir" elixir-mode)
     ("Elm" elm-mode)
-    ("Emacs Lisp" emacs-lisp-mode lisp-interaction-mode)
+    ("Emacs Lisp" emacs-lisp-mode)
     ("Fish" fish-mode)
     ("GLSL" glsl-mode)
     ("Go" go-mode)

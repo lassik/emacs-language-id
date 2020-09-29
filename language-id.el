@@ -2,7 +2,7 @@
 ;;
 ;; Author: Lassi Kortela <lassi@lassi.io>
 ;; URL: https://github.com/lassik/emacs-language-id
-;; Version: 0.7.1
+;; Version: 0.8
 ;; Package-Requires: ((emacs "24") (cl-lib "0.5"))
 ;; Keywords: languages util
 ;; SPDX-License-Identifier: ISC
@@ -123,6 +123,7 @@
     ("PureScript" purescript-mode)
     ("Python" python-mode)
     ("R" ess-r-mode (ess-mode (ess-dialect "R")))
+    ("Reason" reason-mode)
     ("Ruby" enh-ruby-mode ruby-mode)
     ("Rust" rust-mode rustic-mode)
     ("Scala" scala-mode)

@@ -66,6 +66,12 @@
       (web-mode-engine "none")
       (language-id--file-name-extension ".tsx")))
 
+    ;; Vue needs to come before HTML because vue-html-mode is derived
+    ;; from html-mode.
+    ("Vue"
+     vue-mode
+     (web-mode (web-mode-content-type "html") (web-mode-engine "vue")))
+
     ;; The rest of the definitions are in alphabetical order.
 
     ("Assembly" asm-mode nasm-mode)
@@ -134,9 +140,6 @@
     ("Swift" swift-mode swift3-mode)
     ("TOML" toml-mode conf-toml-mode)
     ("Verilog" verilog-mode)
-    ("Vue"
-     vue-mode
-     (web-mode (web-mode-content-type "html") (web-mode-engine "vue")))
     ("XML"
      nxml-mode xml-mode
      (web-mode (web-mode-content-type "xml") (web-mode-engine "none")))

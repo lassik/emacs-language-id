@@ -34,25 +34,24 @@
 (defconst language-id--definitions
   '(
 
-    ;; JSON needs to come before JavaScript. Since json-mode is
-    ;; derived from javascript-mode, having JavaScript before JSON
-    ;; would cause JSON to be detected as JavaScript.
+    ;;; Definitions that need special attention to precedence order.
+
+    ;; json-mode is derived from javascript-mode.
     ("JSON"
      json-mode
      (web-mode (web-mode-content-type "json") (web-mode-engine "none")))
 
-    ;; PHP needs to come before C because php-mode is derived from
-    ;; c-mode.
+    ;; php-mode is derived from c-mode.
     ("PHP" php-mode)
 
-    ;; Terraform needs to come before HCL because terraform-mode is
-    ;; derived from hcl-mode.
+    ;; terraform-mode is derived from hcl-mode.
     ("Terraform" terraform-mode)
 
     ;; TypeScript/TSX need to come before JavaScript/JSX because in
     ;; web-mode we can tell them apart by file name extension only.
-    ;; This implies that unsaved temp buffers using TypeScript/TSX in
-    ;; web-mode are classified as JavaScript/JSX.
+    ;;
+    ;; This implies that we inconsistently classify unsaved temp
+    ;; buffers using TypeScript/TSX as JavaScript/JSX.
     ("TypeScript"
      typescript-mode
      (web-mode
@@ -66,14 +65,13 @@
       (web-mode-engine "none")
       (language-id--file-name-extension ".tsx")))
 
-    ;; Vue needs to come before HTML because vue-html-mode is derived
-    ;; from html-mode.
+    ;; vue-html-mode is derived from html-mode.
     ("Vue"
      vue-mode
      vue-html-mode
      (web-mode (web-mode-content-type "html") (web-mode-engine "vue")))
 
-    ;; The rest of the definitions are in alphabetical order.
+    ;;; The rest of the definitions are in alphabetical order.
 
     ("Assembly" asm-mode nasm-mode)
     ("Bazel" bazel-mode)

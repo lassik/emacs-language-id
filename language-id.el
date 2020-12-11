@@ -70,6 +70,7 @@
     ;; from html-mode.
     ("Vue"
      vue-mode
+     vue-html-mode
      (web-mode (web-mode-content-type "html") (web-mode-engine "vue")))
 
     ;; The rest of the definitions are in alphabetical order.

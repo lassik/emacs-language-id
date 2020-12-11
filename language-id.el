@@ -44,6 +44,9 @@
     ;; php-mode is derived from c-mode.
     ("PHP" php-mode)
 
+    ;; scss-mode is derived from css-mode.
+    ("SCSS" scss-mode)
+
     ;; terraform-mode is derived from hcl-mode.
     ("Terraform" terraform-mode)
 
@@ -135,7 +138,6 @@
     ("Rust" rust-mode rustic-mode)
     ("Scala" scala-mode)
     ("Scheme" scheme-mode)
-    ("SCSS" scss-mode)
     ("Shell" sh-mode)
     ("Solidity" solidity-mode)
     ("SQL" sql-mode)

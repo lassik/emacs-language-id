@@ -52,18 +52,18 @@
     ;;
     ;; This implies that we inconsistently classify unsaved temp
     ;; buffers using TypeScript/TSX as JavaScript/JSX.
-    ("TypeScript"
-     typescript-mode
-     (web-mode
-      (web-mode-content-type "javascript")
-      (web-mode-engine "none")
-      (language-id--file-name-extension ".ts")))
     ("TSX"
      typescript-tsx-mode
      (web-mode
       (web-mode-content-type "jsx")
       (web-mode-engine "none")
       (language-id--file-name-extension ".tsx")))
+    ("TypeScript"
+     typescript-mode
+     (web-mode
+      (web-mode-content-type "javascript")
+      (web-mode-engine "none")
+      (language-id--file-name-extension ".ts")))
 
     ;; vue-html-mode is derived from html-mode.
     ("Vue"

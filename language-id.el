@@ -82,6 +82,7 @@
     ("Cabal Config" haskell-cabal-mode)
     ("Clojure" clojure-mode clojurec-mode clojurescript-mode)
     ("CMake" cmake-mode)
+    ("Common Lisp" lisp-mode)
     ("Crystal" crystal-mode)
     ("CSS"
      css-mode
@@ -133,6 +134,7 @@
     ("Ruby" enh-ruby-mode ruby-mode)
     ("Rust" rust-mode rustic-mode)
     ("Scala" scala-mode)
+    ("Scheme" scheme-mode)
     ("SCSS" scss-mode)
     ("Shell" sh-mode)
     ("Solidity" solidity-mode)

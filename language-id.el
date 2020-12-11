@@ -130,6 +130,7 @@
     ("PureScript" purescript-mode)
     ("Python" python-mode)
     ("R" ess-r-mode (ess-mode (ess-dialect "R")))
+    ("Racket" racket-mode)
     ("Reason" reason-mode)
     ("Ruby" enh-ruby-mode ruby-mode)
     ("Rust" rust-mode rustic-mode)

@@ -82,7 +82,7 @@
     ("C" c-mode)
     ("C++" c++-mode)
     ("Cabal Config" haskell-cabal-mode)
-    ("Clojure" clojure-mode clojurec-mode clojurescript-mode)
+    ("Clojure" clojurescript-mode clojurec-mode clojure-mode)
     ("CMake" cmake-mode)
     ("Common Lisp" lisp-mode)
     ("Crystal" crystal-mode)
@@ -103,7 +103,7 @@
     ("Haskell" haskell-mode)
     ("HCL" hcl-mode)
     ("HTML"
-     html-helper-mode html-mode mhtml-mode nxhtml-mode
+     html-helper-mode mhtml-mode html-mode nxhtml-mode
      (web-mode (web-mode-content-type "html") (web-mode-engine "none")))
     ("Java" java-mode)
     ("JavaScript"

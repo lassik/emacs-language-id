@@ -77,6 +77,7 @@
     ;;; The rest of the definitions are in alphabetical order.
 
     ("Assembly" asm-mode nasm-mode)
+    ("ATS" ats-mode)
     ("Bazel" bazel-mode)
     ("BibTeX" bibtex-mode)
     ("C" c-mode)

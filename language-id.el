@@ -2,7 +2,7 @@
 ;;
 ;; Author: Lassi Kortela <lassi@lassi.io>
 ;; URL: https://github.com/lassik/emacs-language-id
-;; Version: 0.10
+;; Version: 0.11
 ;; Package-Requires: ((emacs "24") (cl-lib "0.5"))
 ;; Keywords: languages util
 ;; SPDX-License-Identifier: ISC
@@ -81,6 +81,7 @@
     ("Bazel" bazel-mode)
     ("BibTeX" bibtex-mode)
     ("C" c-mode)
+    ("C#" csharp-mode)
     ("C++" c++-mode)
     ("Cabal Config" haskell-cabal-mode)
     ("Clojure" clojurescript-mode clojurec-mode clojure-mode)

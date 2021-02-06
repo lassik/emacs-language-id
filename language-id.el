@@ -68,6 +68,13 @@
       (web-mode-engine "none")
       (language-id--file-name-extension ".ts")))
 
+    ;; ReScript needs to come before Reason because in reason-mode
+    ;; we can tell them apart by file name extension only.
+    ("ReScript"
+     (reason-mode
+      (language-id--file-name-extension ".res")))
+    ("Reason" reason-mode)
+
     ;; vue-html-mode is derived from html-mode.
     ("Vue"
      vue-mode
@@ -135,7 +142,6 @@
     ("Python" python-mode)
     ("R" ess-r-mode (ess-mode (ess-dialect "R")))
     ("Racket" racket-mode)
-    ("Reason" reason-mode)
     ("Ruby" enh-ruby-mode ruby-mode)
     ("Rust" rust-mode rustic-mode)
     ("Scala" scala-mode)

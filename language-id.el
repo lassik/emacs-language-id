@@ -73,6 +73,9 @@
     ("ReScript"
      (reason-mode
       (language-id--file-name-extension ".res")))
+    ("ReScript"
+     (reason-mode
+      (language-id--file-name-extension ".resi")))
     ("Reason" reason-mode)
 
     ;; vue-html-mode is derived from html-mode.

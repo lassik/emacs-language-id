@@ -154,6 +154,7 @@
     ("SQL" sql-mode)
     ("Swift" swift-mode swift3-mode)
     ("TOML" toml-mode conf-toml-mode)
+    ("V" v-mode)
     ("Verilog" verilog-mode)
     ("XML"
      nxml-mode xml-mode

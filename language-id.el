@@ -2,7 +2,7 @@
 ;;
 ;; Author: Lassi Kortela <lassi@lassi.io>
 ;; URL: https://github.com/lassik/emacs-language-id
-;; Version: 0.13
+;; Version: 0.14
 ;; Package-Requires: ((emacs "24") (cl-lib "0.5"))
 ;; Keywords: languages util
 ;; SPDX-License-Identifier: ISC
@@ -88,6 +88,7 @@
 
     ("Assembly" asm-mode nasm-mode)
     ("ATS" ats-mode)
+    ("Awk" awk-mode)
     ("Bazel" bazel-mode)
     ("BibTeX" bibtex-mode)
     ("C" c-mode)

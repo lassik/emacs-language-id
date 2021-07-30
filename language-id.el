@@ -153,6 +153,9 @@
     ("Shell" sh-mode)
     ("Solidity" solidity-mode)
     ("SQL" sql-mode)
+    ("Svelte"
+     svelte-mode
+     (web-mode (web-mode-content-type "html") (web-mode-engine "svelte")))
     ("Swift" swift-mode swift3-mode)
     ("TOML" toml-mode conf-toml-mode)
     ("V" v-mode)

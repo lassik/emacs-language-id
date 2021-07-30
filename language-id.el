@@ -2,7 +2,7 @@
 
 ;; Author: Lassi Kortela <lassi@lassi.io>
 ;; URL: https://github.com/lassik/emacs-language-id
-;; Version: 0.15
+;; Version: 0.15.1
 ;; Package-Requires: ((emacs "24") (cl-lib "0.5"))
 ;; Keywords: languages util
 ;; SPDX-License-Identifier: ISC
@@ -46,6 +46,11 @@
 
     ;; scss-mode is derived from css-mode.
     ("SCSS" scss-mode)
+
+    ;; svelte-mode is derived from html-mode.
+    ("Svelte"
+     svelte-mode
+     (web-mode (web-mode-content-type "html") (web-mode-engine "svelte")))
 
     ;; terraform-mode is derived from hcl-mode.
     ("Terraform" terraform-mode)
@@ -153,9 +158,6 @@
     ("Shell" sh-mode)
     ("Solidity" solidity-mode)
     ("SQL" sql-mode)
-    ("Svelte"
-     svelte-mode
-     (web-mode (web-mode-content-type "html") (web-mode-engine "svelte")))
     ("Swift" swift-mode swift3-mode)
     ("TOML" toml-mode conf-toml-mode)
     ("V" v-mode)

@@ -125,6 +125,7 @@
     ("Elixir" elixir-mode)
     ("Elm" elm-mode)
     ("Emacs Lisp" emacs-lisp-mode)
+    ("F#" fsharp-mode)
     ("Fish" fish-mode)
     ("GLSL" glsl-mode)
     ("Go" go-mode)

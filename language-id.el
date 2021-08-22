@@ -115,6 +115,8 @@
     ("Elm" elm-mode)
     ("Emacs Lisp" emacs-lisp-mode)
     ("Fish" fish-mode)
+    ("Fortran" fortran-mode)
+    ("Fortran Free Form" f90-mode)
     ("GLSL" glsl-mode)
     ("Go" go-mode)
     ("GraphQL" graphql-mode)

@@ -107,6 +107,10 @@
     ("CSS"
      css-mode
      (web-mode (web-mode-content-type "css") (web-mode-engine "none")))
+    ("Cuda"
+     cuda-mode
+     (or (language-id--file-name-extension ".cu")
+         (language-id--file-name-extension ".cuh")))
     ("D" d-mode)
     ("Dart" dart-mode)
     ("Dhall" dhall-mode)
@@ -114,7 +118,6 @@
     ("Elixir" elixir-mode)
     ("Elm" elm-mode)
     ("Emacs Lisp" emacs-lisp-mode)
-    ("F#" fsharp-mode)
     ("Fish" fish-mode)
     ("GLSL" glsl-mode)
     ("Go" go-mode)

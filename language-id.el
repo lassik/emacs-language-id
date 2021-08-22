@@ -37,8 +37,8 @@
     ;;; Definitions that need special attention to precedence order.
 
     ;; It is not uncommon for C++ mode to be used when writing Cuda.
-    ;; In this case, the only way to correctly identify Cuda is by looking at
-    ;; the extension
+    ;; In this case, the only way to correctly identify Cuda is by
+    ;; looking at the extension.
     ("Cuda"
      c++-mode
      (language-id--file-name-extension ".cu"))

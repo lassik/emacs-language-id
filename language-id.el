@@ -36,6 +36,16 @@
 
     ;;; Definitions that need special attention to precedence order.
 
+    ;; It is not uncommon for C++ mode to be used when writing Cuda.
+    ;; In this case, the only way to correctly identify Cuda is by looking at
+    ;; the extension
+    ("Cuda"
+     c++-mode
+     (language-id--file-name-extension ".cu"))
+    ("Cuda"
+     c++-mode
+     (language-id--file-name-extension ".cuh"))
+
     ;; json-mode is derived from javascript-mode.
     ("JSON"
      json-mode
@@ -107,10 +117,7 @@
     ("CSS"
      css-mode
      (web-mode (web-mode-content-type "css") (web-mode-engine "none")))
-    ("Cuda"
-     cuda-mode
-     (or (language-id--file-name-extension ".cu")
-         (language-id--file-name-extension ".cuh")))
+    ("Cuda" cuda-mode)
     ("D" d-mode)
     ("Dart" dart-mode)
     ("Dhall" dhall-mode)

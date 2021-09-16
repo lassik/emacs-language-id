@@ -2,7 +2,7 @@
 
 ;; Author: Lassi Kortela <lassi@lassi.io>
 ;; URL: https://github.com/lassik/emacs-language-id
-;; Version: 0.16
+;; Version: 0.16.1
 ;; Package-Requires: ((emacs "24") (cl-lib "0.5"))
 ;; Keywords: languages util
 ;; SPDX-License-Identifier: ISC
@@ -40,11 +40,8 @@
     ;; In this case, the only way to correctly identify Cuda is by
     ;; looking at the extension.
     ("Cuda"
-     c++-mode
-     (language-id--file-name-extension ".cu"))
-    ("Cuda"
-     c++-mode
-     (language-id--file-name-extension ".cuh"))
+     (c++-mode (language-id--file-name-extension ".cu"))
+     (c++-mode (language-id--file-name-extension ".cuh")))
 
     ;; json-mode is derived from javascript-mode.
     ("JSON"

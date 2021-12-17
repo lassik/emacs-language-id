@@ -3,7 +3,7 @@
 ;; Author: Lassi Kortela <lassi@lassi.io>
 ;; URL: https://github.com/lassik/emacs-language-id
 ;; Version: 0.16.1
-;; Package-Requires: ((emacs "24") (cl-lib "0.5"))
+;; Package-Requires: ((emacs "24.1") (cl-lib "0.5"))
 ;; Keywords: languages util
 ;; SPDX-License-Identifier: ISC
 
@@ -26,6 +26,8 @@
 ;; language.
 
 ;;; Code:
+
+(require 'cl-lib)
 
 (defvar language-id--file-name-extension nil
   "Internal variable for file name extension during lookup.")
@@ -182,11 +184,11 @@
 (defun language-id--mode-match-p (mode)
   "Interal helper to match current buffer against MODE."
   (let ((mode (if (listp mode) mode (list mode))))
-    (cl-destructuring-bind (wanted-major-mode . variables) mode
+    (pcase-let ((`(,wanted-major-mode . ,variables) mode))
       (and (derived-mode-p wanted-major-mode)
            (cl-every
             (lambda (variable)
-              (cl-destructuring-bind (symbol wanted-value) variable
+              (pcase-let ((`(,symbol ,wanted-value) variable))
                 (equal wanted-value
                        (if (boundp symbol) (symbol-value symbol) nil))))
             variables)))))
@@ -213,7 +215,7 @@ returns nil."
   (let ((language-id--file-name-extension
          (downcase (file-name-extension (or (buffer-file-name) "") t))))
     (cl-some (lambda (definition)
-               (cl-destructuring-bind (language-id . modes) definition
+               (pcase-let ((`(,language-id . ,modes) definition))
                  (when (cl-some #'language-id--mode-match-p modes)
                    language-id)))
              language-id--definitions)))

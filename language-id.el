@@ -119,6 +119,7 @@
     ("Dart" dart-mode)
     ("Dhall" dhall-mode)
     ("Dockerfile" dockerfile-mode)
+    ("EJS" (web-mode (web-mode-content-type "html") (web-mode-engine "ejs")))
     ("Elixir" elixir-mode)
     ("Elm" elm-mode)
     ("Emacs Lisp" emacs-lisp-mode)

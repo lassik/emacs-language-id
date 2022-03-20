@@ -44,6 +44,8 @@
      (c++-mode (language-id--file-name-extension ".cuh")))
 
     ;; json-mode is derived from javascript-mode.
+    ("JSON5"
+     (json-mode (language-id--file-name-extension ".json5")))
     ("JSON"
      json-mode
      (web-mode (web-mode-content-type "json") (web-mode-engine "none")))

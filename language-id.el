@@ -27,6 +27,8 @@
 
 ;;; Code:
 
+(require 'cl-lib)
+
 (defvar language-id--file-name-extension nil
   "Internal variable for file name extension during lookup.")
 

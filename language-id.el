@@ -2,7 +2,7 @@
 
 ;; Author: Lassi Kortela <lassi@lassi.io>
 ;; URL: https://github.com/lassik/emacs-language-id
-;; Version: 0.17
+;; Version: 0.18
 ;; Package-Requires: ((emacs "24.3"))
 ;; Keywords: languages util
 ;; SPDX-License-Identifier: ISC

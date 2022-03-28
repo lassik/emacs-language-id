@@ -42,8 +42,10 @@
     ;; In this case, the only way to correctly identify Cuda is by
     ;; looking at the extension.
     ("Cuda"
-     (c++-mode (language-id--file-name-extension ".cu"))
-     (c++-mode (language-id--file-name-extension ".cuh")))
+     (c++-mode
+      (language-id--file-name-extension ".cu"))
+     (c++-mode
+      (language-id--file-name-extension ".cuh")))
 
     ;; json-mode is derived from javascript-mode.
     ("JSON5"
@@ -156,7 +158,10 @@
     ("Haskell" haskell-mode)
     ("HCL" hcl-mode)
     ("HTML"
-     html-helper-mode mhtml-mode html-mode nxhtml-mode
+     html-helper-mode
+     mhtml-mode
+     html-mode
+     nxhtml-mode
      (web-mode
       (web-mode-content-type "html")
       (web-mode-engine "none")))

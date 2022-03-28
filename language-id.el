@@ -63,6 +63,9 @@
     ;; scss-mode is derived from css-mode.
     ("SCSS" scss-mode)
 
+    ;; solidity-mode is derived from c-mode.
+    ("Solidity" solidity-mode)
+
     ;; svelte-mode is derived from html-mode.
     ("Svelte"
      svelte-mode
@@ -177,7 +180,6 @@
     ("Scala" scala-mode)
     ("Scheme" scheme-mode)
     ("Shell" sh-mode)
-    ("Solidity" solidity-mode)
     ("SQL" sql-mode)
     ("Swift" swift-mode swift3-mode)
     ("TOML" toml-mode conf-toml-mode)

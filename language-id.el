@@ -55,7 +55,9 @@
       (language-id--file-name-extension ".json5")))
     ("JSON"
      json-mode
-     (web-mode (web-mode-content-type "json") (web-mode-engine "none")))
+     (web-mode
+      (web-mode-content-type "json")
+      (web-mode-engine "none")))
 
     ;; php-mode is derived from c-mode.
     ("PHP" php-mode)
@@ -69,7 +71,9 @@
     ;; svelte-mode is derived from html-mode.
     ("Svelte"
      svelte-mode
-     (web-mode (web-mode-content-type "html") (web-mode-engine "svelte")))
+     (web-mode
+      (web-mode-content-type "html")
+      (web-mode-engine "svelte")))
 
     ;; terraform-mode is derived from hcl-mode.
     ("Terraform" terraform-mode)
@@ -106,7 +110,9 @@
     ("Vue"
      vue-mode
      vue-html-mode
-     (web-mode (web-mode-content-type "html") (web-mode-engine "vue")))
+     (web-mode
+      (web-mode-content-type "html")
+      (web-mode-engine "vue")))
 
     ;;; The rest of the definitions are in alphabetical order.
 
@@ -125,13 +131,18 @@
     ("Crystal" crystal-mode)
     ("CSS"
      css-mode
-     (web-mode (web-mode-content-type "css") (web-mode-engine "none")))
+     (web-mode
+      (web-mode-content-type "css")
+      (web-mode-engine "none")))
     ("Cuda" cuda-mode)
     ("D" d-mode)
     ("Dart" dart-mode)
     ("Dhall" dhall-mode)
     ("Dockerfile" dockerfile-mode)
-    ("EJS" (web-mode (web-mode-content-type "html") (web-mode-engine "ejs")))
+    ("EJS"
+     (web-mode
+      (web-mode-content-type "html")
+      (web-mode-engine "ejs")))
     ("Elixir" elixir-mode)
     ("Elm" elm-mode)
     ("Emacs Lisp" emacs-lisp-mode)
@@ -146,20 +157,34 @@
     ("HCL" hcl-mode)
     ("HTML"
      html-helper-mode mhtml-mode html-mode nxhtml-mode
-     (web-mode (web-mode-content-type "html") (web-mode-engine "none")))
+     (web-mode
+      (web-mode-content-type "html")
+      (web-mode-engine "none")))
     ("Java" java-mode)
     ("JavaScript"
-     (js-mode (flow-minor-mode nil))
-     (js2-mode (flow-minor-mode nil))
-     (js3-mode (flow-minor-mode nil))
-     (web-mode (web-mode-content-type "javascript") (web-mode-engine "none")))
+     (js-mode
+      (flow-minor-mode nil))
+     (js2-mode
+      (flow-minor-mode nil))
+     (js3-mode
+      (flow-minor-mode nil))
+     (web-mode
+      (web-mode-content-type "javascript")
+      (web-mode-engine "none")))
     ("JSON"
      json-mode
-     (web-mode (web-mode-content-type "json") (web-mode-engine "none")))
+     (web-mode
+      (web-mode-content-type "json")
+      (web-mode-engine "none")))
     ("Jsonnet" jsonnet-mode)
     ("JSX"
-     js2-jsx-mode jsx-mode rjsx-mode react-mode
-     (web-mode (web-mode-content-type "jsx") (web-mode-engine "none")))
+     js2-jsx-mode
+     jsx-mode
+     rjsx-mode
+     react-mode
+     (web-mode
+      (web-mode-content-type "jsx")
+      (web-mode-engine "none")))
     ("Kotlin" kotlin-mode)
     ("LaTeX" latex-mode)
     ("Less" less-css-mode)
@@ -173,7 +198,10 @@
     ("Protocol Buffer" protobuf-mode)
     ("PureScript" purescript-mode)
     ("Python" python-mode)
-    ("R" ess-r-mode (ess-mode (ess-dialect "R")))
+    ("R"
+     ess-r-mode
+     (ess-mode
+      (ess-dialect "R")))
     ("Racket" racket-mode)
     ("Ruby" enh-ruby-mode ruby-mode)
     ("Rust" rust-mode rustic-mode)
@@ -186,8 +214,11 @@
     ("V" v-mode)
     ("Verilog" verilog-mode)
     ("XML"
-     nxml-mode xml-mode
-     (web-mode (web-mode-content-type "xml") (web-mode-engine "none")))
+     nxml-mode
+     xml-mode
+     (web-mode
+      (web-mode-content-type "xml")
+      (web-mode-engine "none")))
     ("YAML" yaml-mode))
   "Internal table of programming language definitions.")
 

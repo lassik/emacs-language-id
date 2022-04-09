@@ -2,7 +2,7 @@
 
 ;; Author: Lassi Kortela <lassi@lassi.io>
 ;; URL: https://github.com/lassik/emacs-language-id
-;; Version: 0.18
+;; Version: 0.19
 ;; Package-Requires: ((emacs "24.3"))
 ;; Keywords: languages util
 ;; SPDX-License-Identifier: ISC
@@ -224,7 +224,8 @@
      (web-mode
       (web-mode-content-type "xml")
       (web-mode-engine "none")))
-    ("YAML" yaml-mode))
+    ("YAML" yaml-mode)
+    ("Zig" zig-mode))
   "Internal table of programming language definitions.")
 
 (defun language-id--mode-match-p (mode)

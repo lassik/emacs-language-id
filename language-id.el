@@ -148,6 +148,7 @@
     ("Elixir" elixir-mode)
     ("Elm" elm-mode)
     ("Emacs Lisp" emacs-lisp-mode)
+    ("Erlang" erlang-mode)
     ("F#" fsharp-mode)
     ("Fish" fish-mode)
     ("Fortran" fortran-mode)

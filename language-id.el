@@ -57,6 +57,7 @@
       (language-id--file-name-extension ".json5")))
     ("JSON"
      json-mode
+     jsonian-mode
      (web-mode
       (web-mode-content-type "json")
       (web-mode-engine "none")))

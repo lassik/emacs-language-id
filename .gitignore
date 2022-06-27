@@ -1,2 +1,2 @@
 *.elc
-languages.yml
+/admin/languages.yml

@@ -167,6 +167,10 @@
      (web-mode
       (web-mode-content-type "html")
       (web-mode-engine "none")))
+    ("HTML+ERB"
+     (web-mode
+      (web-mode-content-type "html")
+      (web-mode-engine "erb")))
     ("Java" java-mode)
     ("JavaScript"
      (js-mode
@@ -178,6 +182,10 @@
      (web-mode
       (web-mode-content-type "javascript")
       (web-mode-engine "none")))
+    ("JavaScript+ERB"
+     (web-mode
+      (web-mode-content-type "javascript")
+      (web-mode-engine "erb")))
     ("JSON"
      json-mode
      (web-mode

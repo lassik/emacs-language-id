@@ -47,6 +47,9 @@
      (c++-mode
       (language-id--file-name-extension ".cuh")))
 
+    ;; mint-mode is derived from js-jsx-mode.
+    ("Mint" mint-mode)
+
     ;; json-mode is derived from javascript-mode.
     ("JSON5"
      (json-mode
@@ -206,7 +209,6 @@
     ("Literate Haskell" literate-haskell-mode)
     ("Lua" lua-mode)
     ("Markdown" gfm-mode markdown-mode)
-    ("Mint" mint-mode)
     ("Nix" nix-mode)
     ("Objective-C" objc-mode)
     ("OCaml" caml-mode tuareg-mode)

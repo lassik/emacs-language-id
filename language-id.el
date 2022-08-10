@@ -66,7 +66,11 @@
       (web-mode-engine "none")))
 
     ;; php-mode is derived from c-mode.
-    ("PHP" php-mode)
+    ("PHP"
+     php-mode
+     (web-mode
+      (web-mode-content-type "html")
+      (web-mode-engine "php")))
 
     ;; scss-mode is derived from css-mode.
     ("SCSS" scss-mode)

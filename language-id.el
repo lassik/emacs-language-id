@@ -106,7 +106,6 @@
       (web-mode-engine "none")
       (language-id--file-name-extension ".ts")))
 
-    ("ReScript" rescript-mode)
     ;; ReScript needs to come before Reason because in reason-mode
     ;; we can tell them apart by file name extension only.
     ("ReScript"
@@ -115,6 +114,7 @@
     ("ReScript"
      (reason-mode
       (language-id--file-name-extension ".resi")))
+    ("ReScript" rescript-mode)
     ("Reason" reason-mode)
 
     ;; vue-html-mode is derived from html-mode.

@@ -175,6 +175,10 @@
      (web-mode
       (web-mode-content-type "html")
       (web-mode-engine "none")))
+    ("HTML+EEX"
+     (web-mode
+      (web-mode-content-type "html")
+      (web-mode-engine "elixir")))
     ("HTML+ERB"
      (web-mode
       (web-mode-content-type "html")

@@ -132,7 +132,7 @@
     ("Awk" awk-mode)
     ("Bazel" bazel-mode)
     ("BibTeX" bibtex-mode)
-    ("C" c-mode)
+    ("C" c-mode c-ts-mode)
     ("C#" csharp-mode)
     ("C++" c++-mode)
     ("Cabal Config" haskell-cabal-mode)

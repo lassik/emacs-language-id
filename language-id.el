@@ -158,7 +158,7 @@
      (web-mode
       (web-mode-content-type "html")
       (web-mode-engine "ejs")))
-    ("Elixir" elixir-mode)
+    ("Elixir" elixir-mode elixir-ts-mode)
     ("Elm" elm-mode)
     ("Emacs Lisp" emacs-lisp-mode)
     ("Erlang" erlang-mode)
@@ -180,6 +180,7 @@
       (web-mode-content-type "html")
       (web-mode-engine "none")))
     ("HTML+EEX"
+     heex-ts-mode
      (web-mode
       (web-mode-content-type "html")
       (web-mode-engine "elixir")))

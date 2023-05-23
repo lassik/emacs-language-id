@@ -269,6 +269,7 @@
                        (if (boundp symbol) (symbol-value symbol) nil))))
             variables)))))
 
+;;;###autoload
 (defun language-id-buffer ()
   "Get GitHub Linguist language name for current buffer.
 

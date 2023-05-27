@@ -289,13 +289,20 @@ are updated in new releases of the library.
 
 If the language is not unambiguously recognized, the function
 returns nil."
-  (let ((language-id--file-name-extension
-         (downcase (file-name-extension (or (buffer-file-name) "") t))))
-    (cl-some (lambda (definition)
-               (cl-destructuring-bind (language-id &rest modes) definition
-                 (when (cl-some #'language-id--mode-match-p modes)
-                   language-id)))
-             language-id--definitions)))
+  (interactive)
+  (let ((language-id
+         (let ((language-id--file-name-extension
+                (downcase (file-name-extension (or (buffer-file-name) "")
+                                               t))))
+           (cl-some (lambda (definition)
+                      (cl-destructuring-bind (language-id &rest modes)
+                          definition
+                        (when (cl-some #'language-id--mode-match-p modes)
+                          language-id)))
+                    language-id--definitions))))
+    (when (called-interactively-p 'interactive)
+      (message "%s" (or language-id "Unknown")))
+    language-id))
 
 (provide 'language-id)
 

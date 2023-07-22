@@ -225,6 +225,7 @@
     ("Literate Haskell" literate-haskell-mode)
     ("Lua" lua-mode)
     ("Markdown" gfm-mode markdown-mode)
+    ("Meson" meson-mode)
     ("Nix" nix-mode)
     ("Objective-C" objc-mode)
     ("OCaml" caml-mode tuareg-mode)

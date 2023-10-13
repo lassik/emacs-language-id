@@ -231,6 +231,7 @@
     ("OCaml" caml-mode tuareg-mode)
     ("Perl" cperl-mode perl-mode)
     ("Protocol Buffer" protobuf-mode)
+    ("Puppet" puppet-mode)
     ("PureScript" purescript-mode)
     ("Python" python-mode python-ts-mode)
     ("R"

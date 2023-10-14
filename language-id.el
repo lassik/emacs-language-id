@@ -188,6 +188,7 @@
      (web-mode
       (web-mode-content-type "html")
       (web-mode-engine "erb")))
+    ("Hy" hy-mode)
     ("Java" java-mode java-ts-mode)
     ("JavaScript"
      js-ts-mode

@@ -242,7 +242,7 @@
     ("Racket" racket-mode)
     ("Ruby" enh-ruby-mode ruby-mode ruby-ts-mode)
     ("Rust" rust-mode rustic-mode rust-ts-mode)
-    ("Scala" scala-mode)
+    ("Scala" scala-mode scala-ts-mode)
     ("Scheme" scheme-mode)
     ("Shell" sh-mode bash-ts-mode)
     ("SQL" sql-mode)

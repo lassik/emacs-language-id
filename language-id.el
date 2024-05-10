@@ -171,6 +171,7 @@
     ("GraphQL" graphql-mode)
     ("Haskell" haskell-mode)
     ("HCL" hcl-mode)
+    ("HLSL" hlsl-mode)
     ("HTML"
      html-helper-mode
      mhtml-mode

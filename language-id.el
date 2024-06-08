@@ -69,6 +69,7 @@
     ;; php-mode is derived from c-mode.
     ("PHP"
      php-mode
+     php-ts-mode
      (web-mode
       (web-mode-content-type "html")
       (web-mode-engine "php")))

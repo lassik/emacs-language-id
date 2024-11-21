@@ -140,6 +140,7 @@
     ("C#" csharp-mode csharp-ts-mode)
     ("C++" c++-mode c++-ts-mode)
     ("Cabal Config" haskell-cabal-mode)
+    ("Caddyfile" caddyfile-mode)
     ("Clojure" clojurescript-mode clojurec-mode clojure-mode)
     ("CMake" cmake-mode cmake-ts-mode)
     ("Common Lisp" lisp-mode)

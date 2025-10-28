@@ -167,6 +167,7 @@
     ("Fish" fish-mode)
     ("Fortran" fortran-mode)
     ("Fortran Free Form" f90-mode)
+    ("GDScript" gdscript-mode)
     ("GLSL" glsl-mode)
     ("Go" go-mode go-ts-mode)
     ("GraphQL" graphql-mode)

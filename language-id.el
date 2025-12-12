@@ -250,6 +250,7 @@
     ("SQL" sql-mode)
     ("Swift" swift-mode swift3-mode)
     ("TOML" toml-mode conf-toml-mode toml-ts-mode)
+    ("Typst" typst-ts-mode)
     ("V" v-mode)
     ("Verilog" verilog-mode)
     ("XML"

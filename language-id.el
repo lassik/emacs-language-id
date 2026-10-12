@@ -59,6 +59,7 @@
       (web-mode-engine "none")
       (language-id--file-name-extension ".json5")))
     ("JSON"
+     js-json-mode
      json-mode
      jsonian-mode
      json-ts-mode
@@ -207,12 +208,6 @@
      (web-mode
       (web-mode-content-type "javascript")
       (web-mode-engine "erb")))
-    ("JSON"
-     json-mode
-     json-ts-mode
-     (web-mode
-      (web-mode-content-type "json")
-      (web-mode-engine "none")))
     ("Jsonnet" jsonnet-mode)
     ("JSX"
      js2-jsx-mode
